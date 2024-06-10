@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GSFCU: FYBCA(Sem-II) Notes</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        h1, h2, h3, h4 { color: #333; }
+        code { background-color: #f4f4f4; padding: 2px 4px; font-size: 90%; }
+        pre { background-color: #f4f4f4; padding: 10px; overflow: auto; }
+    </style>
+</head>
+<body>
+    <h1>GSFCU: FYBCA(Sem-II)</h1>
+    <h2>Front-end Programming</h2>
+
+    <h3>Unit-3: Working with Objects</h3>
+
+    <h4>Objects, Properties, and Methods</h4>
+    <ul>
+        <li>JavaScript is an object-oriented language.</li>
+        <li><strong>Objects</strong>: Entities like tables, chairs, cars, etc., defined by their properties and methods.</li>
+    </ul>
+
+    <h4>Objects in JavaScript</h4>
+    <ul>
+        <li>Objects help reduce programming efforts.</li>
+        <li><strong>Using JavaScript Objects</strong>: Each object has properties and methods to manipulate data.</li>
+        <li><strong>Creating an Object</strong>: Use the <code>var</code> keyword to define a variable initialized with an object.</li>
+    </ul>
+
+    <pre><code>var var_name = new ObjectName(optional_parameters);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new Array(5);
+var b = new Date();
+var c = new String("Hello");</code></pre>
+
+    <h4>Using an Object’s Properties</h4>
+    <ul>
+        <li>Access values using <code>variable.propertyName</code>.</li>
+    </ul>
+
+    <pre><code>var_name.propertyName</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new Array("Hello", 123, 1);
+alert(a.length); // OUTPUT: 3</code></pre>
+
+    <h4>Calling an Object’s Methods</h4>
+    <ul>
+        <li>Methods perform tasks, similar to functions.</li>
+    </ul>
+
+    <pre><code>var_name.methodName</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new Date();
+alert(a.getFullYear()); // OUTPUT: 2011</code></pre>
+
+    <h4>Primitives and Objects</h4>
+    <ul>
+        <li>Variables store data directly; objects reference memory addresses.</li>
+        <li>JavaScript automatically converts data types as needed.</li>
+    </ul>
+
+    <h4>JavaScript Native Objects</h4>
+    <ul>
+        <li><strong>Native Objects</strong>: String, Array, Math, Number, Date</li>
+    </ul>
+
+    <h3>String Object</h3>
+    <ul>
+        <li>String values and objects allow the same methods.</li>
+        <li>Create a string object using <code>new String()</code>.</li>
+    </ul>
+
+    <pre><code>var variable_name = new String(Some string or value);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new String("Hello");
+var b = new String(123);
+alert(a); // OUTPUT: Hello
+alert(b); // OUTPUT: 123</code></pre>
+
+    <h4>Property of String Object</h4>
+    <ul>
+        <li><strong>length</strong>: Returns the number of characters in the string (read-only).</li>
+    </ul>
+
+    <pre><code>object_variable.length</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new String("Hello"), b = "FYBCA";
+alert(a.length); // OUTPUT: 5
+alert(b.length); // OUTPUT: 5</code></pre>
+
+    <h4>Methods of String Object</h4>
+    <ol>
+        <li><strong>toLowerCase()</strong>: Converts a string to lowercase.</li>
+    </ol>
+
+    <pre><code>some_var = string_var.toLowerCase();</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new String("Hello"), b = "Fybca";
+alert(a.toLowerCase()); // OUTPUT: hello
+alert(b.toLowerCase()); // OUTPUT: fybca</code></pre>
+
+    <ol start="2">
+        <li><strong>toUpperCase()</strong>: Converts a string to uppercase.</li>
+    </ol>
+
+    <pre><code>some_var = string_var.toUpperCase();</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new String("Hello"), b = "Fybca";
+alert(a.toUpperCase()); // OUTPUT: HELLO
+alert(b.toUpperCase()); // OUTPUT: FYBCA</code></pre>
+
+    <ol start="3">
+        <li><strong>charAt()</strong>: Extracts a single character from a string.</li>
+    </ol>
+
+    <pre><code>some_var = string_var.charAt(index_position);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new String("Hello"), b = "Fybca";
+alert(a.charAt(0)); // OUTPUT: H
+alert(b.charAt(b.length - 1)); // OUTPUT: a</code></pre>
+
+    <ol start="4">
+        <li><strong>indexOf()</strong>: Searches for a substring within a string.</li>
+    </ol>
+
+    <pre><code>some_var = string_var.indexOf(index_position, start_search_position);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new String("Hello");
+alert(a.indexOf("e")); // OUTPUT: 1
+alert(a.indexOf("e", 2)); // OUTPUT: -1
+alert(a.indexOf("E")); // OUTPUT: -1</code></pre>
+
+    <ol start="5">
+        <li><strong>substr()</strong>: Extracts a substring from a string.</li>
+    </ol>
+
+    <pre><code>some_var = string_var.substr(start_position, number_of_characters);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new String("Hello");
+alert(a.substr(0, 2)); // OUTPUT: He
+alert(a.substr(3, 2)); // OUTPUT: lo</code></pre>
+
+    <h3>Math Object</h3>
+    <ul>
+        <li>Provides mathematical functions and number manipulation methods.</li>
+    </ul>
+
+    <h4>Property of Math Object</h4>
+    <ul>
+        <li><strong>PI</strong>: Returns the value of Pi (π).</li>
+    </ul>
+
+    <pre><code>Math.PI</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var radius = 2;
+var area = Math.PI * Math.pow(radius, 2);
+alert(area); // OUTPUT: 12.566370614359172</code></pre>
+
+    <h4>Methods of Math Object</h4>
+    <ol>
+        <li><strong>abs()</strong>: Returns the absolute value of a number.</li>
+    </ol>
+
+    <pre><code>Math.abs(some_var);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = 10, b = -5;
+alert(Math.abs(a)); // OUTPUT: 10
+alert(Math.abs(b)); // OUTPUT: 5</code></pre>
+
+    <ol start="2">
+        <li><strong>ceil()</strong>: Rounds a number up to the next largest whole number.</li>
+    </ol>
+
+    <pre><code>Math.ceil(some_var);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = 10.5, b = 15, c = -9.5;
+alert(Math.ceil(a)); // OUTPUT: 11
+alert(Math.ceil(b)); // OUTPUT: 15
+alert(Math.ceil(c)); // OUTPUT: -9</code></pre>
+
+    <ol start="3">
+        <li><strong>floor()</strong>: Rounds a number down to the nearest whole number.</li>
+    </ol>
+
+    <pre><code>Math.floor(some_var);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = 10.5, b = 15, c = -9.5;
+alert(Math.floor(a)); // OUTPUT: 10
+alert(Math.floor(b)); // OUTPUT: 15
+alert(Math.floor(c)); // OUTPUT: -10</code></pre>
+
+    <ol start="4">
+        <li><strong>max()</strong>: Finds the maximum value among the provided parameters.</li>
+    </ol>
+
+    <pre><code>Math.max(some_var1, some_var2, ..., some_varN);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = 10.5, b = 10, c = 9.5;
+alert(Math.max(a, b, c)); // OUTPUT: 10.5</code></pre>
+
+    <ol start="5">
+        <li><strong>min()</strong>: Finds the minimum value among the provided parameters.</li>
+    </ol>
+
+    <pre><code>Math.min(some_var1, some_var2, ..., some_varN);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = 10.5, b = 10, c = 9.5;
+alert(Math.min(a, b, c)); // OUTPUT: 9.5</code></pre>
+
+    <h3>Date Object</h3>
+    <ul>
+        <li>Handles date and time in JavaScript.</li>
+        <li>Methods are divided into <code>get</code> (fetching values) and <code>set</code> (modifying values) methods.</li>
+    </ul>
+
+    <pre><code>var variable_name = new Date(Some_value_or_EMPTY);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new Date();
+var b = new Date("Feb 15 2010 11:10:45");
+alert(a); // OUTPUT: current date and time
+alert(b); // OUTPUT: Tue Feb 15 11:10:45 UTC+0530 2011</code></pre>
+
+    <h4>Methods of Date Object</h4>
+    <ol>
+        <li><strong>getDate()</strong>: Fetches the day number of the month (1-31).</li>
+    </ol>
+
+    <pre><code>some_var.getDate();</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new Date();
+alert(a.getDate()); // OUTPUT: current day of the month</code></pre>
+
+    <ol start="2">
+        <li><strong>getDay()</strong>: Fetches the day number of the week (0-6).</li>
+    </ol>
+
+    <pre><code>some_var.getDay();</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new Date();
+alert(a.getDay()); // OUTPUT: current day of the week (0-6)</code></pre>
+
+    <ol start="3">
+        <li><strong>getFullYear()</strong>: Fetches the 4-digit year number.</li>
+    </ol>
+
+    <pre><code>some_var.getFullYear();</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new Date();
+alert(a.getFullYear()); // OUTPUT: current year</code></pre>
+
+    <ol start="4">
+        <li><strong>getMonth()</strong>: Fetches the month number of the year (0-11).</li>
+    </ol>
+
+    <pre><code>some_var.getMonth();</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new Date();
+alert(a.getMonth()); // OUTPUT: current month (0-11)</code></pre>
+
+    <ol start="5">
+        <li><strong>setDate()</strong>: Changes the date number (1-31).</li>
+    </ol>
+
+    <pre><code>some_var.setDate(date_number);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new Date();
+a.setDate(15);
+alert(a); // OUTPUT: date set to 15th of the current month</code></pre>
+
+    <ol start="6">
+        <li><strong>setFullYear()</strong>: Changes the year number.</li>
+    </ol>
+
+    <pre><code>some_var.setFullYear(year_number);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new Date();
+a.setFullYear(2000);
+alert(a); // OUTPUT: year set to 2000</code></pre>
+
+    <ol start="7">
+        <li><strong>setMonth()</strong>: Changes the month number (0-11).</li>
+    </ol>
+
+    <pre><code>some_var.setMonth(month_number);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = new Date();
+a.setMonth(11);
+alert(a); // OUTPUT: month set to December</code></pre>
+
+    <h3>Regular Expressions</h3>
+    <ul>
+        <li>A sequence of characters forming a search pattern.</li>
+        <li>Used for text search and replace operations.</li>
+    </ul>
+
+    <h4>What is a Regular Expression?</h4>
+    <ul>
+        <li>Describes what you are searching for in a text.</li>
+        <li>Can be a single character or a complex pattern.</li>
+    </ul>
+
+    <pre><code>/pattern/modifiers</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var pattern = /GSFCU/i;</code></pre>
+
+    <ul>
+        <li><code>/GSFCU/i</code> is a regular expression.
+            <ul>
+                <li><code>GSFCU</code> is the pattern.</li>
+                <li><code>i</code> is a modifier for case-insensitivity.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>Using String Methods with Regular Expressions</h4>
+    <ul>
+        <li><strong>search()</strong>: Searches a string for a specified value, returns the position of the match.</li>
+    </ul>
+
+    <pre><code>var str = "This is GSFCU";
+var n = str.search("GSFCU"); // OUTPUT: 8</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var str = "This is GSFCU";
+var n = str.search(/GSFCU/i); // OUTPUT: 8</code></pre>
+
+    <ul>
+        <li><strong>replace()</strong>: Replaces a specified value with another value in a string.</li>
+    </ul>
+
+    <pre><code>var str = "Visit Microsoft!";
+var res = str.replace("Microsoft", "GSFCU");</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var str = "Visit Microsoft!";
+var res = str.replace(/microsoft/i, "GSFCU"); // OUTPUT: Visit GSFCU!</code></pre>
+
+    <h4>Regular Expression Modifiers</h4>
+    <ul>
+        <li><code>i</code>: Case-insensitive search.</li>
+    </ul>
+
+    <p><strong>DISCLAIMER:</strong></p>
+    <p>This study material is created by Dr. Nehal Daulatjada. It supplements classroom teaching and discussion. Students should engage in additional reading through library resources.</p>
+
+    <hr>
+
+    <h3>Unit-4: Basics of DOM</h3>
+
+    <h4>Introduction to DOM</h4>
+    <ul>
+        <li>An HTML page is rendered in a browser, which assembles all elements in its memory.</li>
+        <li>Post-rendering, browsers cannot recognize individual HTML elements.</li>
+        <li>JavaScript-enabled browsers use the DOM (Document Object Model) to recognize individual HTML objects after rendering.</li>
+        <li>The DOM allows browsers to access and manipulate object properties anytime.</li>
+        <li>JavaScript object-based browsers create JavaScript objects mapping to the DOM.</li>
+    </ul>
+
+    <h4>DOM Hierarchy</h4>
+    <ul>
+        <li>Available in all scriptable browsers.</li>
+        <li>Core DOM available in all browsers; HTML DOM hierarchy varies by browser and HTML elements.</li>
+        <li>Forms a tree-like structure with the root object at the top (window object).</li>
+        <li>Accessing a deeply nested object requires traversing from the root through intermediate objects.</li>
+        <li>Standard DOM objects have methods for access/manipulation and properties to modify application of methods.</li>
+    </ul>
+
+    <h4>Form DOM Hierarchy</h4>
+    <ul>
+        <li>HTML documents can contain objects like Images, Hyperlinks, Frames, Forms, etc.</li>
+        <li>Browser creates arrays in memory for HTML objects (e.g., Images, Links, Forms).</li>
+        <li>Form elements must be named and can be accessed by their names in JavaScript.</li>
+        <li>Form elements can be accessed as objects with properties like name, value, type.</li>
+        <li><code>getElementById</code> collection is a W3C standard, supported by all browsers.</li>
+    </ul>
+
+    <pre><code>// Syntax for accessing form elements
+window.document.formName.elementName.property/method/event
+window.document.forms[i].elementName.property/method/event
+window.document.forms["Name"].elementName.property/method/event</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>a = window.document.frm.txt1.value;
+b = window.document.forms[0].txt1.value;
+c = window.document.forms["frm"].txt1.value;</code></pre>
+
+    <h4>Accessing Elements Data</h4>
+    <ul>
+        <li>User input is captured in a Form, creating a forms array in memory.</li>
+        <li>Elements in a form are accessed through the forms collection.</li>
+        <li>Each element is referenced using its name followed by the property/method/event.</li>
+    </ul>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a;
+a = window.document.forms[0].txt1.value;
+alert(a);
+window.document.forms[0].txt1.value = "FYBCA";</code></pre>
+
+    <h4>Text Control</h4>
+    <ul>
+        <li>Accessed through form control using the control's name.</li>
+        <li>Used for entering a single line of text.</li>
+    </ul>
+
+    <pre><code>// Syntax for accessing text control
+window.document.forms[index].textboxname
+window.document.forms["formName"].textboxname
+window.document.formName.textboxname</code></pre>
+
+    <ol>
+        <li><strong>value</strong>: Returns the string in the textbox (editable).</li>
+    </ol>
+
+    <pre><code>// Syntax for getting/setting value
+some_var = window.document.forms[index].textboxname.value;
+some_var = window.document.forms["formName"].textboxname.value;
+some_var = window.document.formName.textboxname.value;</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a;
+a = window.document.forms[0].txt1.value;
+alert(a);
+window.document.forms[0].txt1.value = "FYBCA";</code></pre>
+
+    <h4>Radio Control</h4>
+    <ul>
+        <li>Accessed as an array with index values starting from 0.</li>
+        <li>Allows selecting one from a group of radio buttons.</li>
+    </ul>
+
+    <pre><code>// Syntax for accessing radio control
+window.document.forms[index].radioGroupName[index]
+window.document.forms["formName"].radioGroupName[index]
+window.document.formName.radioGroupName[index]</code></pre>
+
+    <ol>
+        <li><strong>checked</strong>: Returns true if radio button is checked, false otherwise (editable).</li>
+    </ol>
+
+    <pre><code>// Syntax for getting/setting checked property
+window.document.forms[index].radioGroupName[index].checked
+window.document.forms["formName"].radioGroupName[index].checked
+window.document.formName.radioGroupName[index].checked</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>if (window.document.frm.rd[0].checked) 
+    alert("First radio selected");
+window.document.frm.rd[1].checked = true;</code></pre>
+
+    <ol start="2">
+        <li><strong>value</strong>: Returns the value of the checked radio button (editable).</li>
+    </ol>
+
+    <pre><code>// Syntax for getting value
+some_var = window.document.forms[index].radioGroupName[index].value;
+some_var = window.document.forms["formName"].radioGroupName[index].value;
+some_var = window.document.formName.radioGroupName[index].value;</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a;
+if (window.document.frm.rd[0].checked) 
+    a = window.document.frm.rd[0].value;
+else 
+    a = window.document.frm.rd[1].value;
+alert(a);</code></pre>
+
+    <h4>Checkbox Control</h4>
+    <ul>
+        <li>Accessed using the control's name.</li>
+        <li>Toggles between “on” and “off”.</li>
+    </ul>
+
+    <pre><code>// Syntax for accessing checkbox control
+window.document.forms[index].checkboxname
+window.document.forms["formName"].checkboxname
+window.document.formName.checkboxname</code></pre>
+
+    <ol>
+        <li><strong>checked</strong>: Returns true if checkbox is checked, false otherwise (editable).</li>
+    </ol>
+
+    <pre><code>// Syntax for getting/setting checked property
+window.document.forms[index].checkboxname.checked
+window.document.forms["formName"].checkboxname.checked
+window.document.formName.checkboxname.checked</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>if (window.document.frm.chk1.checked) 
+    alert("First Checkbox is checked");
+window.document.frm.chk2.checked = true;</code></pre>
+
+    <ol start="2">
+        <li><strong>value</strong>: Returns the value associated with the checkbox (editable).</li>
+    </ol>
+
+    <pre><code>// Syntax for getting value
+some_var = window.document.forms[index].checkboxname.value;
+some_var = window.document.forms["formName"].checkboxname.value;
+some_var = window.document.formName.checkboxname.value;</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a;
+if (window.document.frm.chk1.checked) {
+    a = window.document.frm.chk1.value;
+    alert(a);
+}
+window.document.frm.chk1.value = "a";</code></pre>
+
+    <h4>Select/Dropdown Control</h4>
+    <ul>
+        <li>Accessed using the control's name.</li>
+        <li>Used for presenting a list of choices for the user.</li>
+    </ul>
+
+    <pre><code>// Syntax for accessing select control
+window.document.forms[index].selectname
+window.document.forms["formName"].selectname
+window.document.formName.selectname</code></pre>
+
+    <ol>
+        <li><strong>selectedIndex</strong>: Returns the index of the selected list item (editable).</li>
+    </ol>
+
+    <pre><code>// Syntax for getting/setting selectedIndex
+some_var = window.document.forms[index].selectname.selectedIndex;
+some_var = window.document.forms["formName"].selectname.selectedIndex;
+some_var = window.document.formName.selectname.selectedIndex;</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a;
+a = window.document.frm.sel.selectedIndex;
+alert(a);
+window.document.frm.sel.selectedIndex = 2;</code></pre>
+
+    <h4>Button Control</h4>
+    <ul>
+        <li>Accessed using the control's name.</li>
+        <li>Generally used to trigger form processing.</li>
+    </ul>
+
+    <pre><code>// Syntax for accessing button control
+window.document.forms[index].buttonname
+window.document.forms["formName"].buttonname
+window.document.formName.buttonname</code></pre>
+
+    <ol>
+        <li><strong>value</strong>: Returns the label/caption displayed on the button (editable).</li>
+    </ol>
+
+    <pre><code>// Syntax for getting/setting value
+window.document.forms[index].buttonname.value
+window.document.forms["formName"].buttonname.value
+window.document.formName.buttonname.value;</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var a = "Changed";
+alert(window.document.frm.btn1.value);
+window.document.frm.btn1.value = a;</code></pre>
+
+    <h4>Event Handling</h4>
+    <ul>
+        <li>A web page event is associated with user actions (e.g., mouse clicks, key presses).</li>
+        <li>JavaScript's approach involves identifying a web page object, choosing an event, and connecting it to JavaScript code snippets.</li>
+    </ul>
+
+    <h4>Types of Events</h4>
+    <ul>
+        <li><strong>Interactive Events</strong>: Depend on user interaction (e.g., onMouseOver).</li>
+        <li><strong>Non-Interactive Events</strong>: Do not need user interaction (e.g., onLoad).</li>
+    </ul>
+
+    <h4>Handling Events in JavaScript (Event Handlers)</h4>
+    <ul>
+        <li><strong>Binding events through tag attributes</strong>: Assign inline JavaScript code in the attribute of an element.</li>
+    </ul>
+
+    <pre><code>&lt;input type="button" name="btn" value="Click here" onClick="abc();" /&gt;</code></pre>
+
+    <h4>Events in DOM</h4>
+    <ol>
+        <li><strong>Click event</strong>: <code>onClick</code> fires when an object is clicked.</li>
+    </ol>
+
+    <pre><code>&lt;input ... onClick="functionName();" /&gt;</code></pre>
+
+    <ol start="2">
+        <li><strong>Blur event</strong>: <code>onBlur</code> fires when the cursor moves away from an object.</li>
+    </ol>
+
+    <pre><code>&lt;input ... onBlur="functionName();" /&gt;</code></pre>
+
+    <ol start="3">
+        <li><strong>Focus event</strong>: <code>onFocus</code> fires when the cursor enters an object.</li>
+    </ol>
+
+    <pre><code>&lt;input ... onFocus="functionName();" /&gt;</code></pre>
+
+    <ol start="4">
+        <li><strong>Load event</strong>: <code>onLoad</code> fires after the page/document is loaded.</li>
+    </ol>
+
+    <pre><code>&lt;body onLoad="functionName();" /&gt;</code></pre>
+
+    <ol start="5">
+        <li><strong>MouseDown event</strong>: <code>onMouseDown</code> fires when an element is clicked and held.</li>
+    </ol>
+
+    <pre><code>&lt;input ... onMouseDown="functionName();" /&gt;</code></pre>
+
+    <ol start="6">
+        <li><strong>MouseUp event</strong>: <code>onMouseUp</code> fires when a mouse click is released.</li>
+    </ol>
+
+    <pre><code>&lt;input ... onMouseUp="functionName();" /&gt;</code></pre>
+
+    <ol start="7">
+        <li><strong>MouseOut event</strong>: <code>onMouseOut</code> fires when the cursor leaves an element.</li>
+    </ol>
+
+    <pre><code>&lt;input ... onMouseOut="functionName();" /&gt;</code></pre>
+
+    <ol start="8">
+        <li><strong>MouseOver event</strong>: <code>onMouseOver</code> fires when the cursor hovers over an element.</li>
+    </ol>
+
+    <pre><code>&lt;input ... onMouseOver="functionName();" /&gt;</code></pre>
+
+    <ol start="9">
+        <li><strong>Reset event</strong>: <code>onReset</code> fires when the form’s reset button is pressed.</li>
+    </ol>
+
+    <pre><code>&lt;form ... onReset="functionName();" /&gt;</code></pre>
+
+    <ol start="10">
+        <li><strong>Submit event</strong>: <code>onSubmit</code> fires when the form’s submit button is pressed.</li>
+    </ol>
+
+    <pre><code>&lt;form ... onSubmit="functionName();" /&gt;</code></pre>
+
+    <p><strong>DISCLAIMER:</strong></p>
+    <p>This study material is created by Dr. Nehal Daulatjada. It supplements classroom teaching and discussion. Students should engage in additional reading through library resources.</p>
+
+    <hr>
+
+    <h3>Unit-5: DOM Programming</h3>
+
+    <h4>Document Object</h4>
+    <ul>
+        <li>Each loaded document becomes a document object.</li>
+        <li>Access HTML elements, properties, and methods through this object.</li>
+    </ul>
+
+    <pre><code>window.document.propertyName
+window.document.methodName([parameter])</code></pre>
+
+    <ul>
+        <li>Browser creates arrays in memory per HTML object in the document.</li>
+    </ul>
+
+    <h4>Referencing an Element</h4>
+    <ul>
+        <li>The document object is the owner of all objects in a web page.</li>
+        <li>Access elements by id, tag name, or class name.</li>
+    </ul>
+
+    <h4>Finding HTML Elements by ID</h4>
+    <pre><code>var element = document.getElementById("idname");</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>&lt;p id="a"&gt;some text here…&lt;/p&gt;
+var paragraph = document.getElementById("a");</code></pre>
+
+    <h4>Finding HTML Elements by Tag Name</h4>
+    <pre><code>var elements = document.getElementsByTagName("tagname");</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>&lt;p&gt;some text here…&lt;/p&gt;
+&lt;p&gt;another paragraph&lt;/p&gt;
+var paragraphs = document.getElementsByTagName("p");</code></pre>
+
+    <h4>Finding HTML Elements by Class Name</h4>
+    <pre><code>var elements = document.getElementsByClassName("classname");</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>&lt;p class="a"&gt;some text here…&lt;/p&gt;
+&lt;h1 class="a"&gt;Some heading here…&lt;/h1&gt;
+var elements = document.getElementsByClassName("a");</code></pre>
+
+    <h4>Modifying HTML Element’s Content</h4>
+    <ul>
+        <li>Use properties like <code>innerHTML</code>, <code>innerText</code>, and <code>textContent</code>.</li>
+    </ul>
+
+    <h4>innerHTML</h4>
+    <ul>
+        <li>Sets or returns the HTML content of an element.</li>
+    </ul>
+
+    <pre><code>element.innerHTML = somevalue;
+var content = element.innerHTML;</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>&lt;p id="a"&gt;something &lt;u&gt;here&lt;/u&gt;&lt;/p&gt;
+&lt;p id="b"&gt;&lt;/p&gt;
+var para1 = document.getElementById("a");
+var para2 = document.getElementById("b");
+para2.innerHTML = para1.innerHTML;</code></pre>
+
+    <h4>innerText</h4>
+    <ul>
+        <li>Returns just the text content of the element without extra spacing and all its children.</li>
+    </ul>
+
+    <pre><code>element.innerText = somevalue;
+var text = element.innerText;</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>&lt;p id="a"&gt;something &lt;u&gt;here&lt;/u&gt;&lt;/p&gt;
+&lt;p id="b"&gt;&lt;/p&gt;
+var para1 = document.getElementById("a");
+var para2 = document.getElementById("b");
+para2.innerText = para1.innerHTML;</code></pre>
+
+    <h4>textContent</h4>
+    <ul>
+        <li>Returns the text content of the element and all descendants, with extra spacing but without tags.</li>
+    </ul>
+
+    <pre><code>element.textContent = somevalue;
+var text = element.textContent;</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>&lt;p id="a"&gt;something &lt;u&gt;here&lt;/u&gt;&lt;/p&gt;
+&lt;p id="b"&gt;&lt;/p&gt;
+var para1 = document.getElementById("a");
+var para2 = document.getElementById("b");
+para2.textContent = para1.textContent;</code></pre>
+
+    <h4>Adding HTML Elements Dynamically</h4>
+    <ul>
+        <li>Use methods like <code>createTextNode</code>, <code>createElement</code>, <code>appendChild</code>, and <code>append</code>.</li>
+    </ul>
+
+    <h4>createTextNode()</h4>
+    <ul>
+        <li>Creates a text node.</li>
+    </ul>
+
+    <pre><code>var textNode = document.createTextNode("text to be added as node");</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>&lt;p&gt;some paragraph&lt;/p&gt;
+var text = document.createTextNode("I was added after the paragraph");
+document.body.appendChild(text);</code></pre>
+
+    <h4>createElement()</h4>
+    <ul>
+        <li>Creates an element node.</li>
+    </ul>
+
+    <pre><code>var element = document.createElement("elementType");</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var h1 = document.createElement("h1");
+var text = document.createTextNode("New Heading");
+h1.appendChild(text);
+document.body.appendChild(h1);</code></pre>
+
+    <h4>appendChild()</h4>
+    <ul>
+        <li>Appends a node as the last child of an element.</li>
+    </ul>
+
+    <pre><code>parentElement.appendChild(childElement);</code></pre>
+
+    <h4>append()</h4>
+    <ul>
+        <li>Appends multiple nodes or strings at once.</li>
+    </ul>
+
+    <pre><code>element.append(node1, node2, ...);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var h1 = document.createElement("h1");
+var text = document.createTextNode("New Heading");
+h1.append(text, " hello");
+document.body.appendChild(h1);</code></pre>
+
+    <h4>Deleting HTML Elements</h4>
+    <ul>
+        <li>Use methods like <code>removeChild</code> and <code>remove</code>.</li>
+    </ul>
+
+    <h4>removeChild()</h4>
+    <ul>
+        <li>Removes a specified child node from the current node.</li>
+    </ul>
+
+    <pre><code>parentElement.removeChild(childElement);</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>document.body.removeChild(document.getElementById("a"));</code></pre>
+
+    <h4>remove()</h4>
+    <ul>
+        <li>Removes an element from the document.</li>
+    </ul>
+
+    <pre><code>element.remove();</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var element = document.getElementById("demo");
+element.remove();</code></pre>
+
+    <h4>Adding Attributes to HTML Elements Dynamically</h4>
+    <ul>
+        <li>Use <code>setAttribute</code> to add or update attributes.</li>
+    </ul>
+
+    <pre><code>element.setAttribute("attributeName", "newValue");</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var anchor = document.getElementById("myAnchor");
+anchor.setAttribute("href", "https://www.gsfcuni.edu.in/");</code></pre>
+
+    <h4>Deleting Attributes of HTML Elements</h4>
+    <ul>
+        <li>Use <code>removeAttribute</code> to remove attributes.</li>
+    </ul>
+
+    <pre><code>element.removeAttribute("attributeName");</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>var anchor = document.getElementById("myAnchor");
+anchor.removeAttribute("href");</code></pre>
+
+    <p><strong>DISCLAIMER:</strong></p>
+    <p>This study material is created by Dr. Nehal Daulatjada. It supplements classroom teaching and discussion. Students should engage in additional reading through library resources.</p>
+</body>
+</html>
